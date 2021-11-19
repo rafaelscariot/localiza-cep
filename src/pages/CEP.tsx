@@ -21,7 +21,6 @@ const CEP: React.FC = () => {
             if (jsonResponse.erro) {
               setError("Erro inesperado.");
             } else {
-              console.log(jsonResponse);
               setError("");
               setLocation(jsonResponse.localidade);
               setUF(jsonResponse.uf);
